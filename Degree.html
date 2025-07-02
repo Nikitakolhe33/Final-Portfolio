@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Degree Certificate - Nikita Kolhe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Georgia', serif;
+      background: linear-gradient(135deg, #4eb9e4, #e376ec);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+
+    .certificate {
+      background: white;
+      width: 100%;
+      max-width: 800px;
+      padding: 30px;
+      position: relative;
+      border: 5px solid #d9a009;
+      border-radius: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    }
+
+    .certificate h1 {
+      text-align: center;
+      color: #b22222;
+      font-size: 28px;
+      margin-bottom: 5px;
+    }
+
+    .certificate h3 {
+      text-align: center;
+      font-weight: normal;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .seal {
+      position: absolute;
+      top: 30px;
+      left: 30px;
+      width: 80px;
+      max-width: 100%;
+    }
+
+    .watermark {
+      position: absolute;
+      opacity: 0.08;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 500px;
+      max-width: 90%;
+    }
+
+    .content {
+      font-size: 17px;
+      line-height: 1.8;
+      color: #333;
+      text-align: justify;
+    }
+
+    .marathi {
+      margin-top: 40px;
+      font-size: 17px;
+      line-height: 1.7;
+      color: #222;
+    }
+
+    .signature {
+      text-align: right;
+      margin-top: 40px;
+      font-size: 15px;
+      color: #444;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 25px;
+      font-size: 13px;
+      color: gray;
+    }
+
+    @media (max-width: 768px) {
+      .certificate {
+        padding: 20px;
+      }
+
+      .certificate h1 {
+        font-size: 22px;
+      }
+
+      .certificate h3 {
+        font-size: 14px;
+      }
+
+      .content,
+      .marathi {
+        font-size: 15px;
+      }
+
+      .seal {
+        width: 60px;
+        top: 20px;
+        left: 20px;
+      }
+
+      .signature {
+        font-size: 14px;
+      }
+
+      .footer {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="certificate">
+    <!-- Optional watermark image -->
+    <!-- <img src="watermark.png" class="watermark" alt="Watermark"> -->
+
+    <img src="SBP.png" class="seal" alt="University Seal">
+
+    <h1>Savitribai Phule Pune University</h1>
+    <h3>(formerly University of Pune)</h3>
+
+    <div class="content">
+      <p>
+        We, the Chancellor, the Vice Chancellor and the Members of the Management Council and the Academic Council of the Savitribai Phule Pune University, certify that
+        <strong>Kolhe Nikita Bhagwan</strong>, Mother's Name: <strong>Bharati</strong>
+        of <em>K.K. Wagh ACS, Commerce, Science & Computer Science College, Nashik</em> having been examined and found duly qualified for the degree of
+        <strong>Bachelor of Science (Computer Science)</strong>
+        and placed in the <strong>A Grade</strong> in <strong>April 2023</strong>. The said degree has been conferred on her. In testimony whereof is set the seal of the said University.
+      </p>
+
+      <div class="marathi">
+        <strong>सावित्रीबाई फुले पुणे विद्यापीठ</strong><br/>
+        (पूर्वीचे पुणे विद्यापीठ)<br/><br/>
+        आम्ही, सावित्रीबाई फुले पुणे विद्यापीठाचे कुलपती, कुलगुरु आणि व्यवस्थापन परिषद व विद्या परिषद सदस्य, प्रमाणित करतो की<br/>
+        <strong>कोळे निकिता भगवान, आईचे नाव: भारती</strong><br/>
+        के. के. वाघ कला, वाणिज्य, विज्ञान व संगणकविज्ञान महाविद्यालय, नाशिक, यांनी <strong>२०२३</strong> साली <strong>विज्ञान स्नातक</strong> (संगणकशास्त्र) पदवी उत्तीर्ण केली आहे.
+      </div>
+
+      <div class="signature">
+        <strong>Vice Chancellor</strong><br/>
+        123rd Convocation (Winter)<br/>
+        SC23-10844
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2023 Savitribai Phule Pune University
+    </div>
+  </div>
+
+</body>
+</html>

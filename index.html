@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Nikita's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #4eb9e4, #e376ec);
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      padding: 20px;
+      overflow: hidden;
+    }
+
+    img {
+      width: 35vw;
+      max-width: 160px;
+      height: 35vw;
+      max-height: 160px;
+      border-radius: 50%;
+      object-fit: contain;
+      background-color: transparent;
+      display: block;
+      box-shadow: 0 8px 20px rgba(243, 241, 241, 0.836);
+      animation: float 3s ease-in-out 1s 2, fadeIn 1s ease-out forwards;
+      opacity: 0;
+    }
+
+    h1 {
+      font-size: 6vw;
+      color: #2c3e50;
+      margin: 20px 0 10px;
+      animation: slideDown 1.2s ease-out forwards;
+      animation-delay: 0.5s;
+      opacity: 0;
+    }
+
+    p {
+      font-size: 4.5vw;
+      color: #34495e;
+      margin-bottom: 30px;
+      animation: fadeIn 1.5s ease-out forwards;
+      animation-delay: 1s;
+      opacity: 0;
+    }
+
+    button {
+      position: relative;
+      padding: 14px 36px;
+      font-size: 18px;
+      font-weight: 600;
+      border: none;
+      background: linear-gradient(45deg, #2d98da, #3867d6);
+      color: white;
+      border-radius: 50px;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      transition: all 0.4s ease;
+      animation: bounceIn 1.6s ease-out forwards;
+      animation-delay: 1.5s;
+      opacity: 1;
+    }
+
+    button::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -75%;
+      width: 50%;
+      height: 100%;
+      background: rgba(255, 255, 255, 0.2);
+      transform: skewX(-25deg);
+      animation: shine 2.5s infinite;
+    }
+
+    button:hover {
+      transform: scale(1.06);
+      background: linear-gradient(45deg, #226fa3, #274c77);
+      box-shadow: 0 8px 26px rgba(0, 0, 0, 0.35);
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    @keyframes slideDown {
+      0% { transform: translateY(-50px); opacity: 0; }
+      100% { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes bounceIn {
+      0% { transform: translateY(30px); opacity: 0; }
+      60% { transform: translateY(-10px); opacity: 1; }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    @keyframes shine {
+      0% { left: -75%; }
+      100% { left: 125%; }
+    }
+
+    /* Desktop adjustments */
+    @media (min-width: 600px) {
+      h1 { font-size: 2.5rem; }
+      p { font-size: 1.2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <img src="Nikita.jpg" alt="Profile Photo of Nikita Kolhe">
+  <h1>Welcome, Nikita Kolhe</h1>
+  <p>Frontend Developer | Creative Thinker | Fast Learner</p>
+  <button id="enterBtn">View My Portfolio</button>
+
+  <script>
+    document.getElementById("enterBtn").addEventListener("click", function () {
+      window.location.href = "View.html";
+    });
+  </script>
+
+</body>
+</html>
